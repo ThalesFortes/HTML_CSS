@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #BFD7E4;
+}
+
+body::before{
+  content:'';
+  height: 465px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+}
+
+header{
+  width: 720px;
+  margin: 100px auto 30px;
+  text-align: center;
+}
+
+h1{
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+p{
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+form{
+  width: 750px;
+  margin: 30px auto 400px;
+  background: #FFF;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+form > div:first-child  legend{
+  background:#F67669;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 20px 20px 0px 0px;
+  border: none;
+  margin: auto;
+}
+
+.legend_wrapper legend {
+  margin: 0px 64px 30px;
+  border-bottom: 1px solid #E6E6F0;;
+ 
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #253B51;
+  text-align: center;
+
+}
+
+.name{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.input_wrapper , 
+.input_wrapper select,
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 64px;
+  gap:8px;
+
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  
+}
+
+.input_wrapper span{
+  color: #C1BCCC;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.name .input_wrapper {
+  margin: 0px;
+}
+
+.name >div:nth-child(1) {
+  margin-left: 64px;
+  margin-top: 30px;
+}
+
+.name >div:nth-child(2) {
+  margin-top: 30px;
+}
+
+.name .input_wrapper input{
+  width: 300px;
+
+}
+
+.input_wrapper input , 
+.input_wrapper select,
+.input_wrapper textarea{
+  margin-bottom: 15px;
+  border: none;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  padding: 10px;
+
+}
+
+.input_wrapper select{
+  width: 50%;
+  appearance: none;
+  background: #FAFAFC url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") no-repeat right center;
+  margin: 0px 0px 15px;
+  padding: 20px;
+}
+
+.input_wrapper textarea{
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  resize: none;
+}
+
+.check_wrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 64px;
+  gap:8px;
+
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+
+.check_wrapper input{
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.check_wrapper label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+ }
+
+.check_wrapper label::before{
+  content: '';
+  display: block;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+
+.check_wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_3002_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3002_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.check_wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+
+.date_section{
+  display: flex;
+  flex-direction: row;
+}
+
+.date_section> div:nth-child(1){
+  width: 400px;
+  margin: 0px 30px 15px 64px;
+}
+
+.date_section> div:nth-child(2){
+  margin:0px 10px 15px 0px
+}
+
+.date_section> div:nth-child(3){
+  margin:0px 64px 15px 0px
+}
+
+.date_section> div:nth-child(2),.date_section> div:nth-child(3){
+  width: 150px;
+}
+
+button{
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  background:#F67669;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0px 64px;
+  transition: 0.9s;
+}
+
+button:hover{
+  background:#fa6150;
+  cursor: pointer;
+}
