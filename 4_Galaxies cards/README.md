@@ -9,7 +9,7 @@ O ponto focal do projeto são os seis cards estilizados com o layout grid, cada 
 Cada card oferece uma breve introdução à galáxia apresentada, acompanhada por uma imagem cativante que transmite sua majestade. 
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![Web 1](https://github.com/ThalesFortes/HTML_CSS/blob/main/4_Galaxies%20cards/assets/printPag.png)
 
 # Tecnologias utilizadas
 
